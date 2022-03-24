@@ -56,6 +56,6 @@ If you would like to add any extra features to the optimisation simulation, feel
 
 Erol Gelbul - [Website](http://www.erolgelbul.com) - erolgelbul@gmail.com
 
-Project Link: [Calories Web](https://github.com/ErolGelbul/calories-web)
+Project Link: [Object Painter](https://github.com/ErolGelbul/object_painter)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
