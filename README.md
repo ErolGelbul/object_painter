@@ -5,19 +5,33 @@
 <!-- ABOUT THE PROJECT -->
 ## About
 
+This is another OOP project I worked on, and the time period of this project was my pre-entry to
+computer vision. I wanted to get familiar with NumPy. I also used Python's imaging library: Pillow.
 
+I created a basic CLI for the user to interact with the app. The user creates a canvas with dimensions up to them to decide.
+The way I approached this was to have a canvas created by numpy arrays, forming a matrix. You can easily do this with numpy.zeros:
+`data = np.zeros((10, 10, 3), dtype=np.uint8)`. The dimensions in this case would be 10x10 and 3 will represent the RGB colors. 
+In `array_to_numpy.py` file I made a quick demo on how to tackle this task.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
+The next task was to figure how I can display new objects on the canvas. I created a Canvas class, that would hold the canvas data
+and render it in an object instance. First, I ask the user to input values for the object they want to create then create an object
+instance depending on the object they picked, either rectangle or square. Since I have the canvas object already saved up from before,
+I can apply this new object instance onto the canvas object instance by using the draw method in `shapes.py`.
 
 <div style="text-align:center"><img src="images/preview.gif" /></div>
+
+Ultimately, the object is outputted using the make method of `canvas.py`.
+
+<p align="center">
+  <img src="images/canvas.png"/></div>
+</p>
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- TECH -->
 ## Technologies
 
-Web Frameworks: [Flask](https://flask.palletsprojects.com/en/2.0.x/) - install: `$ pip install -U Flask`
-
-Libraries & Packages: [WTForms](https://wtforms.readthedocs.io/en/3.0.x/), [SelectorLib](https://selectorlib.com/)
+Libraries: [NumPy](https://numpy.org/), [Pillow](https://pillow.readthedocs.io/en/stable/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
